@@ -596,8 +596,7 @@
     var gallery = window.LumenProductGallery.mount(
       root.querySelector("[data-gallery-root]"),
       window.LumenProducts.media(product),
-      L(product.alt) || window.LumenProducts.displayName(product),
-      { tag: L(product.concentration) }
+      L(product.alt) || window.LumenProducts.displayName(product)
     );
     var fold = bindFold(root);
 

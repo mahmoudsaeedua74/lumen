@@ -374,16 +374,13 @@
         );
       }
       var compare = window.LumenProducts.compareAt(product);
-      var percent = window.LumenProducts.discountPercent(product);
-      var html =
-        '<div class="product-card__pricing"><p class="product-card__price">' + esc(current) + "</p>";
-      if (compare && percent) {
+      var html = '<div class="product-card__pricing">';
+      html += '<span class="product-card__price">' + esc(current) + "</span>";
+      if (compare) {
         html +=
-          '<p class="product-card__compare"><span class="product-card__off">' +
-          esc(window.LumenI18n.t("discountPercent", { n: percent })) +
-          "</span> <s>" +
+          ' <s class="product-card__was">' +
           esc(window.LumenProducts.formatPrice(compare)) +
-          "</s></p>";
+          "</s>";
       }
       html += "</div>";
       return html;

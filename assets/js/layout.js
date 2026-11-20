@@ -88,8 +88,15 @@
     var announcement = document.querySelector("[data-announcement]");
     if (announcement) {
       announcement.hidden = false;
-      var textEl = announcement.querySelector("[data-announcement-text]");
-      if (textEl) textEl.textContent = t("announcement");
+      var shopHref = (isHome() ? "" : "index.html") + "#collection";
+      announcement.innerHTML =
+        '<p data-announcement-text>' +
+        escapeHtml(t("announcement")) +
+        '</p><a class="announcement__cta" href="' +
+        escapeAttr(shopHref) +
+        '">' +
+        escapeHtml(t("announcementCta")) +
+        "</a>";
     }
 
     var header = document.querySelector("[data-site-header]");

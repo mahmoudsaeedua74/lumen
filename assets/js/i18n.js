@@ -6,7 +6,8 @@
     ar: {
       skip: "تخطي إلى المحتوى",
       brandTagline: "أضِئ جوهرك مع لومين",
-      announcement: "مجموعة لومين · Essence و Mirage و Serene و Glow",
+      announcement: "عرض خاص — خصم 45% على المجموعة",
+      announcementCta: "تسوق الآن",
       navHome: "الرئيسية",
       navShop: "المتجر",
       navAbout: "قصتنا",
@@ -276,7 +277,8 @@
     en: {
       skip: "Skip to content",
       brandTagline: "Illuminate Your Essence With LUMEN",
-      announcement: "LUMEN collection · Essence, Mirage, Serene & Glow",
+      announcement: "Special offer — 45% off the collection",
+      announcementCta: "Shop now",
       navHome: "Home",
       navShop: "Shop",
       navAbout: "Our Story",

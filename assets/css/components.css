@@ -229,8 +229,11 @@
 }
 
 .product-card__pricing {
-  display: grid;
-  gap: 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45rem 0.65rem;
+  margin: 0;
 }
 
 .product-card__price,
@@ -239,29 +242,15 @@
   font-size: clamp(1.05rem, 1.3vw, 1.2rem);
   font-weight: 700;
   letter-spacing: 0;
-  color: #f58216;
+  color: #24201c;
   margin: 0;
 }
 
-.product-card__compare {
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.4rem 0.55rem;
-  font-size: 0.82rem;
+.product-card__was {
+  font-size: 0.9rem;
+  font-weight: 500;
   color: #8a7a68;
-}
-
-.product-card__compare s {
   text-decoration: line-through;
-  color: #9a8b78;
-}
-
-.product-card__off {
-  color: #e85a8c;
-  font-weight: 600;
-  font-size: 0.8rem;
 }
 
 .product-card__unavailable {

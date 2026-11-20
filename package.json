@@ -4,7 +4,11 @@
   "version": "1.0.0",
   "description": "LUMEN static perfume storefront",
   "scripts": {
-    "export:homepage": "node scripts/export-homepage.mjs"
+    "export:homepage": "node scripts/export-pages.mjs homepage",
+    "export:product": "node scripts/export-pages.mjs product",
+    "export:mobile": "node scripts/export-pages.mjs mobile",
+    "export:client": "node scripts/export-pages.mjs product-mobile-set",
+    "export:all": "node scripts/export-pages.mjs all"
   },
   "devDependencies": {
     "playwright": "^1.49.0"

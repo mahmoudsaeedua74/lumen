@@ -10,13 +10,41 @@
 
 /* Announcement */
 .announcement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
   background: #171717;
   color: #fff9ed;
   text-align: center;
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  letter-spacing: 0;
   padding: 0.55rem 1rem;
   line-height: 1.5;
+}
+
+.announcement p {
+  margin: 0;
+}
+
+.announcement__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  padding: 0.15rem 0.9rem;
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.announcement__cta:hover {
+  background: var(--color-primary-hover);
+  color: var(--color-on-primary);
 }
 
 /* Header */

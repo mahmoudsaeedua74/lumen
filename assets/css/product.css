@@ -264,7 +264,7 @@ body[data-page="product"] {
 
 .pdp-gallery__main {
   position: relative;
-  background: var(--color-beige);
+  background: transparent;
   aspect-ratio: 1 / 1.05;
   overflow: hidden;
   display: grid;

@@ -25,16 +25,40 @@ npx playwright install chromium
 Export (repeat anytime):
 
 ```bash
+# Homepage desktop (continuous PDF quality)
 npm run export:homepage
+
+# Product page desktop (default slug: serene)
+npm run export:product
+
+# Mobile homepage + mobile product
+npm run export:mobile
+
+# Product desktop + both mobile exports
+npm run export:client
+
+# Everything
+npm run export:all
 ```
 
-Outputs (no site changes):
+Change product slug:
 
-- `exports/LUMEN-Homepage-Desktop.png`
-- `exports/LUMEN-Homepage-Desktop.pdf`
-- `exports/LUMEN-Homepage-Desktop-continuous.pdf` (single full-height page — use this if the primary PDF splits sections)
+```bash
+# Windows PowerShell
+$env:LUMEN_PRODUCT_SLUG="essence"; npm run export:product
 
-Optional: point at an already running server with `LUMEN_EXPORT_URL=http://127.0.0.1:8080 npm run export:homepage`.
+# macOS / Linux
+LUMEN_PRODUCT_SLUG=mirage npm run export:product
+```
+
+Key continuous PDFs (best for client decks):
+
+- `exports/LUMEN-Homepage-Desktop-continuous.pdf`
+- `exports/LUMEN-Product-Serene-Desktop-continuous.pdf`
+- `exports/LUMEN-Homepage-Mobile-continuous.pdf`
+- `exports/LUMEN-Product-Serene-Mobile-continuous.pdf`
+
+Optional: `LUMEN_EXPORT_URL=http://127.0.0.1:8080 npm run export:all`
 
 ## Pages (exactly two templates)
 
