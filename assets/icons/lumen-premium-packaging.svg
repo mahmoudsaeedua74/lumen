@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128" width="128" height="128" role="img" aria-labelledby="title desc">
+  <title id="title">LUMEN — تقديم أنيق</title>
+  <desc id="desc">صندوق عطر فاخر يفتح غطاؤه برفق مع لمعة صغيرة، بأيقونة برتقالية متحركة.</desc>
+  <style>
+    :root{--lumen-orange:#F58216}
+    .line{fill:none;stroke:var(--lumen-orange);stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round}
+    .fine{stroke-width:2.4}
+    .lid{transform-origin:64px 40px;animation:open-lid 3.8s cubic-bezier(.4,0,.2,1) infinite}
+    .glow{animation:gleam 3.8s ease-in-out infinite;transform-origin:99px 28px}
+    .bottle{animation:bottle-rise 3.8s ease-in-out infinite}
+    @keyframes open-lid{0%,15%,78%,100%{transform:translateY(0)}32%,59%{transform:translateY(-11px)}}
+    @keyframes bottle-rise{0%,18%,75%,100%{transform:translateY(0)}37%,57%{transform:translateY(-4px)}}
+    @keyframes gleam{0%,22%,70%,100%{opacity:0;transform:scale(.6)}40%,54%{opacity:1;transform:scale(1)}}
+    @media (prefers-reduced-motion:reduce){.lid,.glow,.bottle{animation:none}.glow{opacity:1}}
+  </style>
+  <!-- Base: an elegant isometric luxury presentation box -->
+  <path class="line" d="M20 54 64 77 108 54v39l-44 23-44-23Z"/>
+  <path class="line" d="M64 77v39"/>
+  <path class="line fine" d="M28 65v23l28 15" opacity=".43"/>
+  <!-- Small embossed luxury mark -->
+  <path class="line fine" d="m81 85 7-4 7 4-7 4Z M88 89v9"/>
+  <!-- Satin gift bottle, glimpsed in the box -->
+  <g class="bottle">
+    <rect x="54" y="45" width="20" height="27" rx="3" class="line fine"/>
+    <path class="line fine" d="M59 45v-5h10v5 M58 58h12"/>
+  </g>
+  <!-- Lid: lifts up and returns, keeping the same perspective -->
+  <g class="lid">
+    <path class="line" d="m13 46 51-27 51 27-51 27Z" fill="#FAF6ED"/>
+    <path class="line" d="m13 46 51 27 51-27v12L64 85 13 58Z" fill="#FAF6ED"/>
+    <path class="line" d="M64 73v12"/>
+    <path class="line fine" d="m51 26 51 27" opacity=".5"/>
+  </g>
+  <!-- Timed luxury glint -->
+  <g class="glow" fill="none" stroke="#F58216" stroke-width="2.3" stroke-linecap="round">
+    <path d="M100 13v7 M100 35v7 M86 27h7 M107 27h7"/>
+    <path d="m92 19 3 3 M105 32l3 3 M108 19l-3 3 M95 32l-3 3" stroke-width="1.5"/>
+  </g>
+</svg>

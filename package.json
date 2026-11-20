@@ -1,0 +1,12 @@
+{
+  "name": "lumen-storefront",
+  "private": true,
+  "version": "1.0.0",
+  "description": "LUMEN static perfume storefront",
+  "scripts": {
+    "export:homepage": "node scripts/export-homepage.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  }
+}

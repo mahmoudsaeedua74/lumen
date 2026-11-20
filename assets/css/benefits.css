@@ -1,0 +1,94 @@
+.section--benefits {
+  background: #faf6ed;
+  padding-block: clamp(3rem, 5vw, 4rem);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(1.25rem, 2.5vw, 1.85rem);
+  align-items: start;
+}
+
+.benefit-item {
+  margin: 0;
+  padding: 0.35rem 0.5rem;
+  text-align: center;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.benefit-item__icon {
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 0.9rem;
+  display: grid;
+  place-items: center;
+  color: #f58216;
+}
+
+.benefit-item__svg,
+.benefit-item__object {
+  width: 68px;
+  height: 68px;
+  display: block;
+  max-width: 100%;
+}
+
+.benefit-item__svg {
+  overflow: visible;
+}
+
+.benefit-item__object {
+  pointer-events: none;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+.benefit-item h3 {
+  margin: 0 0 0.4rem;
+  color: #24201c;
+  font-size: clamp(1rem, 1.1vw, 1.125rem);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.benefit-item p {
+  margin: 0 auto;
+  max-width: 16.5rem;
+  color: #736152;
+  font-size: clamp(0.8125rem, 0.95vw, 0.9375rem);
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .benefit-item__svg *,
+  .benefit-item__svg *::before,
+  .benefit-item__svg *::after {
+    animation: none !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem 1.25rem;
+  }
+
+  .benefit-item__icon,
+  .benefit-item__svg,
+  .benefit-item__object {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media (max-width: 360px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 1.35rem;
+  }
+}

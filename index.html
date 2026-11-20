@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar-SA" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LUMEN — عطور فاخرة</title>
+    <meta name="description" content="اكتشف مجموعة لومين: Essence وMirage وSerene وGlow." />
+    <meta property="og:title" content="LUMEN — عطور فاخرة" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/lumen-banner-desktop.png" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/homepage.css" />
+    <link rel="stylesheet" href="assets/css/benefits.css" />
+    <link rel="stylesheet" href="assets/css/testimonials.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body data-page="home">
+    <a class="visually-hidden" href="#main" data-i18n="skip">تخطي إلى المحتوى</a>
+    <div class="announcement" data-announcement><p data-announcement-text></p></div>
+    <header class="site-header" data-site-header></header>
+
+    <main id="main">
+      <section class="hero-banner" aria-label="LUMEN collection">
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/lumen-banner-mobile.png" />
+          <img
+            src="assets/lumen-banner-desktop.png"
+            alt="عطر يترك أثرًا — مجموعة لومين الفاخرة"
+            class="hero-banner__image"
+            width="1916"
+            height="821"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </picture>
+        <div class="hero-hotspots">
+          <a class="hero-hotspot hero-hotspot--shop-desktop" href="#collection" aria-label="اكتشف المجموعة"></a>
+          <a class="hero-hotspot hero-hotspot--about-desktop" href="#benefits" aria-label="قصتنا"></a>
+          <a class="hero-hotspot hero-hotspot--shop-mobile" href="#collection" aria-label="اكتشف المجموعة"></a>
+          <a class="hero-hotspot hero-hotspot--about-mobile" href="#benefits" aria-label="قصتنا"></a>
+        </div>
+      </section>
+
+      <section class="section section--collection" id="collection">
+        <div class="container container--shop">
+          <header class="section-head section-head--center">
+            <h2 data-i18n="discoverLumen">اكتشف مجموعة لومين</h2>
+            <p data-i18n="collectionSubtitle">أربع عطور، لكل منها حضورها الخاص</p>
+          </header>
+          <div class="product-grid product-grid--home" data-collection-grid></div>
+        </div>
+      </section>
+
+      <section class="section section--tabby" data-tabby-banner hidden></section>
+
+      <section class="section section--benefits" id="benefits">
+        <div class="container container--shop">
+          <div class="benefits-grid" data-benefits></div>
+        </div>
+      </section>
+
+      <section
+        class="section section--testimonials"
+        id="testimonials"
+        data-testimonials-section
+        hidden
+        aria-label="آراء عملائنا"
+      ></section>
+    </main>
+
+    <footer class="site-footer" data-site-footer></footer>
+
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/wishlist.js"></script>
+    <script src="assets/js/toast.js"></script>
+    <script src="assets/js/layout.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/components/product-card.js"></script>
+    <script src="assets/js/components/cart-drawer.js"></script>
+    <script src="assets/js/components/wishlist-drawer.js"></script>
+    <script src="assets/js/components/product-gallery.js"></script>
+    <script src="assets/js/components/benefits-section.js"></script>
+    <script src="assets/js/data/testimonials.js"></script>
+    <script src="assets/js/components/testimonials-section.js"></script>
+    <script src="assets/js/pages/homepage.js"></script>
+    <script src="assets/js/pages/product-page.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

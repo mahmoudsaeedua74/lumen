@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-labelledby="title desc">
+  <title id="title">LUMEN — تجربة تسوق مريحة</title>
+  <desc id="desc">حقيبة تسوق برتقالية بخطوط أنيقة، تتحرك يدها برفق وتظهر علامة صح داخلها.</desc>
+  <style>
+    :root { --lumen-orange: #F58216; }
+    .line { fill: none; stroke: var(--lumen-orange); stroke-width: 3.6; stroke-linecap: round; stroke-linejoin: round; }
+    .handle { transform-origin: 64px 43px; animation: handle-settle 2.6s ease-in-out infinite; }
+    .check { stroke-dasharray: 35; stroke-dashoffset: 35; animation: check-draw 2.6s ease-in-out infinite; }
+    .spark { fill: var(--lumen-orange); transform-origin: 99px 37px; animation: sparkle 2.6s ease-in-out infinite; }
+    @keyframes handle-settle { 0%, 12%, 65%, 100% { transform: translateY(0); } 22%, 34% { transform: translateY(-3px); } 48% { transform: translateY(1px); } }
+    @keyframes check-draw { 0%, 30% { stroke-dashoffset: 35; opacity: 0; } 38% { opacity: 1; } 61%, 86% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 35; opacity: 0; } }
+    @keyframes sparkle { 0%, 47%, 94%, 100% { transform: scale(.5); opacity: 0; } 61%, 73% { transform: scale(1); opacity: .9; } }
+    @media (prefers-reduced-motion: reduce) { .handle, .check, .spark { animation: none; } .check { stroke-dashoffset: 0; opacity: 1; } .spark { opacity: .8; transform: none; } }
+  </style>
+  <path class="line" d="M33 46H95L91 103H37L33 46Z"/>
+  <g class="handle"><path class="line" d="M48 49V36a16 16 0 0 1 32 0v13"/></g>
+  <path class="line" opacity=".36" stroke-width="2.3" d="M43 56v12M85 56v12"/>
+  <path class="line check" d="M51 77l10 10 19-22" stroke-width="4.2"/>
+  <path class="spark" d="M99 27l2.5 7.5L109 37l-7.5 2.5L99 47l-2.5-7.5L89 37l7.5-2.5L99 27Z"/>
+</svg>

@@ -1,0 +1,77 @@
+.section {
+  padding-block: clamp(1.75rem, 4vw, 4.5rem);
+}
+
+.section-head--center {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.section-head--center h2 {
+  margin-bottom: 0.5rem;
+}
+
+.section-head--center p {
+  color: var(--color-fg-muted);
+  margin: 0 auto;
+  max-width: 36rem;
+}
+
+.product-grid--home {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.section--tabby {
+  padding-block: 0;
+}
+
+.tabby-banner__inner {
+  width: min(100% - 2rem, 1280px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 1.5rem;
+  align-items: center;
+  background: linear-gradient(120deg, #f3eef8, #faf6ed 55%, #efe8f7);
+  border: 1px solid rgba(36, 32, 28, 0.08);
+  padding: clamp(1.25rem, 3vw, 2rem);
+  min-height: 220px;
+}
+
+.tabby-banner__copy h2 {
+  margin-bottom: 0.5rem;
+}
+
+.tabby-banner__copy p {
+  margin-bottom: 0.5rem;
+}
+
+.tabby-banner__brand {
+  display: flex;
+  justify-content: center;
+}
+
+.tabby-banner__brand img {
+  width: min(180px, 70%);
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .product-grid--home {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tabby-banner__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid--home {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+}

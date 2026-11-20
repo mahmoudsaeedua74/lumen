@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-labelledby="title desc">
+<title id="title">LUMEN Signature Fragrances</title>
+<desc id="desc">Three elegant perfume bottles with a subtle animated fragrance flourish.</desc>
+<style>
+  .line{fill:none;stroke:#F58216;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+  .fine{fill:none;stroke:#F58216;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .accent{fill:#F58216}
+  .bottle{transform-box:fill-box;transform-origin:center bottom;animation:appear 3.8s cubic-bezier(.25,.8,.25,1) infinite}
+  .left{animation-delay:.07s}.center{animation-delay:.19s}.right{animation-delay:.32s}
+  .fragrance{stroke-dasharray:70;stroke-dashoffset:70;animation:flow 3.8s ease-in-out infinite}
+  .spark{transform-box:fill-box;transform-origin:center;animation:glow 3.8s ease-in-out infinite}
+  .spark-two{animation-delay:.4s}
+  @keyframes appear{0%,6%{transform:translateY(5px);opacity:.65}22%,80%{transform:translateY(0);opacity:1}100%{transform:translateY(5px);opacity:.65}}
+  @keyframes flow{0%,18%{stroke-dashoffset:70;opacity:0}48%,72%{stroke-dashoffset:0;opacity:.9}95%,100%{stroke-dashoffset:-70;opacity:0}}
+  @keyframes glow{0%,27%,80%,100%{opacity:.18;transform:scale(.8)}45%,60%{opacity:1;transform:scale(1.08)}}
+  @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important}.fragrance{stroke-dashoffset:0;opacity:1}.spark{opacity:1}}
+</style>
+<!-- neutral grouping; no fill block, works on transparent/ivory background -->
+<!-- fragrance trail -->
+<path class="fine fragrance" d="M88 24c-6-8 8-11 3-19M99 30c8-8-4-12 3-20" opacity=".8"/>
+<!-- left amber bottle -->
+<g class="bottle left">
+ <rect class="line" x="20" y="68" width="39" height="56" rx="6"/>
+ <path class="fine" d="M26 77v34c0 4 3 7 7 7" opacity=".6"/>
+ <rect class="line" x="28" y="58" width="23" height="10" rx="2.5"/>
+ <path class="fine" d="M31 90h17M34 100h11"/>
+ <path class="fine" d="M24 120h31" opacity=".45"/>
+</g>
+<!-- right clear bottle -->
+<g class="bottle right">
+ <rect class="line" x="103" y="68" width="37" height="56" rx="6"/>
+ <path class="fine" d="M109 78v32c0 5 3 8 8 8" opacity=".6"/>
+ <rect class="line" x="111" y="58" width="21" height="10" rx="2.5"/>
+ <path class="fine" d="M113 91h17M117 101h9"/>
+ <path class="fine" d="M107 120h29" opacity=".45"/>
+</g>
+<!-- center black Glow hero bottle with premium stylized cap -->
+<g class="bottle center">
+ <rect x="65" y="33" width="31" height="38" rx="4" fill="#F58216" opacity=".14"/>
+ <rect class="line" x="65" y="33" width="31" height="38" rx="4"/>
+ <path class="fine" d="M69 39v25M74 38v27" opacity=".52"/>
+ <rect class="line" x="61" y="71" width="39" height="60" rx="7"/>
+ <path class="fine" d="M67 80v38c0 4 3 7 6 7" opacity=".56"/>
+ <path class="line" d="M72 98h17" stroke-width="2"/>
+ <path class="fine" d="M74 106h13M70 125h21"/>
+ <path class="fine" d="M70 33v-4h21v4"/>
+</g>
+<!-- art-deco ellipse base -->
+<path class="fine" d="M14 135h132" opacity=".4"/>
+<path class="fine" d="M28 140h104" opacity=".25"/>
+<!-- sparkle details -->
+<g class="spark"><path class="fine" d="M125 37v11M119.5 42.5h11"/><path class="accent" d="M125 39.5l3 3-3 3-3-3z"/></g>
+<g class="spark spark-two"><path class="fine" d="M40 33v9M35.5 37.5h9"/></g>
+</svg>
